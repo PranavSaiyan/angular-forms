@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  onSubmit(form : NgForm){
+    console.log(form);
+  }
 }
