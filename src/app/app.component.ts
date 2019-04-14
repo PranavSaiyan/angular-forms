@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent  {
   name = 'Angular';
-  onSubmit(form : NgForm){
+  onSubmit(form : HTMLFormElement){
     console.log(form);
   }
 }
