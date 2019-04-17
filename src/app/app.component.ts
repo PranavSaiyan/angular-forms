@@ -9,6 +9,7 @@ export class AppComponent  {
   @ViewChild('f') submitForm: NgForm;
   @ViewChild('mail') email;
   warn = false;
+  defaultoption = 'book';
   onSubmit(){
     console.log(this.submitForm);
     console.log(this.email);
