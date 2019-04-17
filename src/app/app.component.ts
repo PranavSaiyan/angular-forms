@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm} from '@angular/forms';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
@@ -7,8 +7,9 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent  {
   @ViewChild('f') submitForm: NgForm;
-  name = 'Angular';
+  @ViewChild('email') email;
   onSubmit(){
     console.log(this.submitForm);
+    console.log(this.email);
   }
 }
