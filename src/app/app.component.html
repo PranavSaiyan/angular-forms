@@ -20,6 +20,6 @@
         <option>5</option>
       </select>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" [disabled]="f.form.status === 'INVALID' ? true : false">Submit</button>
   </fieldset>
 </form>
