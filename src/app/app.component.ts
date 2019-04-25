@@ -13,13 +13,18 @@ export class AppComponent  {
   defaultoption = 'book';
   genders = ['Male','Female'];
   suggestUsername() {
-    // this.submitForm.setValue({
+    this.submitForm.setValue({
+Answer: "leo",
+email: "pranavsupersaiyan10@gmail.com",
+gender: "Male",
+list: "pet",
+pass: "ifucku",
+user: "saiyan100"
+    });
 
-    // });
-
-    this.submitForm.form.patchValue({
-      user:"saiyan100"
-      });
+    // this.submitForm.form.patchValue({
+    //   user:"saiyan100"
+    //   });
   }
   onSubmit(){
     console.log(this.submitForm);
