@@ -11,6 +11,14 @@
       <label for="exampleInputPassword1">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required ngModel name="pass">
     </div>
+     <fieldset class="form-group">
+      <legend>Gender</legend>
+      <div class="form-check" *ngFor="let gender of genders">
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="gender" id="{{ gender }}" [value]="gender" ngModel >{{gender}}
+        </label>
+      </div>
+    </fieldset>
     <div class="form-group">
       <label for="exampleSelect1">Security Question</label>
       <select class="form-control" id="exampleSelect1" required [ngModel]="defaultoption" name="list">

@@ -11,6 +11,7 @@ export class AppComponent  {
   warn = false;
   answer = '';
   defaultoption = 'book';
+  genders = ['Male','Female'];
   onSubmit(){
     console.log(this.submitForm);
     console.log(this.email);
