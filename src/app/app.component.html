@@ -1,5 +1,11 @@
 <form (ngSubmit)="onSubmit()" #f="ngForm">
   <fieldset>
+
+    <div class="form-group">
+      <label for="exampleInputPassword1">Username</label>
+      <input type="text" class="form-control" id="exampleInputUsername" placeholder="Enter Username" required ngModel name="user">
+    </div>
+    <button type="button" class="btn btn-primary" >Suggest Username</button>
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ngModel name="email" required email #mail="ngModel" (blur)="onBlur()">
@@ -15,7 +21,7 @@
       <legend>Gender</legend>
       <div class="form-check" *ngFor="let gender of genders">
         <label class="form-check-label">
-          <input type="radio" class="form-check-input" name="gender" id="{{ gender }}" [value]="gender" ngModel >{{gender}}
+          <input type="radio" class="form-check-input" name="gender" id="{{ gender }}" [value]="gender" ngModel required>{{gender}}
         </label>
       </div>
     </fieldset>
