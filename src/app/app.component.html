@@ -41,3 +41,18 @@
     <button type="submit" class="btn btn-primary" [disabled]="f.form.status === 'INVALID' ? true : false">Submit</button>
   </fieldset>
 </form>
+<hr>
+<div class="list-group">
+  <h1>Your Data :</h1>
+  <a  class="list-group-item list-group-item-action">
+    Username : {{ formUser.name }}
+  </a>
+  <a  class="list-group-item list-group-item-action">Email : {{ formUser.email }}
+  </a>
+  <a  class="list-group-item list-group-item-action">Password : {{ formUser.password }}
+  </a>
+  <a  class="list-group-item list-group-item-action">Gender : {{ formUser.gender }}
+  </a>
+  <a  class="list-group-item list-group-item-action">Security : {{ formUser.answer }}
+  </a>
+</div>
