@@ -51,6 +51,7 @@ export class AppComponent  {
     console.log(this.formUser);
     console.log(this.submitForm);
     console.log(this.email);
+    this.submitForm.reset();
   }
   onBlur(){
 console.log(this.email._parent.form.status);
