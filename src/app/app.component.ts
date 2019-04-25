@@ -12,6 +12,7 @@ export class AppComponent  {
   answer = '';
   defaultoption = 'book';
   genders = ['Male','Female'];
+  submitted = false;
   formUser = {
     name:'',
     email:'',
@@ -35,6 +36,7 @@ export class AppComponent  {
       });
   }
   onSubmit(){
+    this.submitted = true;
     this.formUser.name = this.submitForm.form.value.user;
 
     this.formUser.email = this.submitForm.form.value.email;

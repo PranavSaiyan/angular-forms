@@ -42,8 +42,8 @@
   </fieldset>
 </form>
 <hr>
-<div class="list-group">
-  <h1>Your Data :</h1>
+<div class="list-group" *ngIf="submitted">
+  <h1>Your Data : </h1>
   <a  class="list-group-item list-group-item-action">
     Username : {{ formUser.name }}
   </a>
