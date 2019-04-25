@@ -12,6 +12,15 @@ export class AppComponent  {
   answer = '';
   defaultoption = 'book';
   genders = ['Male','Female'];
+  suggestUsername() {
+    // this.submitForm.setValue({
+
+    // });
+
+    this.submitForm.form.patchValue({
+      user:"saiyan100"
+      });
+  }
   onSubmit(){
     console.log(this.submitForm);
     console.log(this.email);

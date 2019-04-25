@@ -1,11 +1,11 @@
 <form (ngSubmit)="onSubmit()" #f="ngForm">
-  <fieldset>
+	<fieldset>
 
-    <div class="form-group">
-      <label for="exampleInputPassword1">Username</label>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Username</label>
       <input type="text" class="form-control" id="exampleInputUsername" placeholder="Enter Username" required ngModel name="user">
     </div>
-    <button type="button" class="btn btn-primary" >Suggest Username</button>
+    <button type="button" (click)="suggestUsername()" class="btn btn-primary" >Suggest Username</button>
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ngModel name="email" required email #mail="ngModel" (blur)="onBlur()">
